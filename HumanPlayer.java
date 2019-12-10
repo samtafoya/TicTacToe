@@ -14,7 +14,6 @@ public class HumanPlayer implements Observer {
 	@Override
 	public void update(Observable o, Object data) {
 		if ((String) data == "0") {
-			System.out.println("you won!");
 			if (JOptionPane.showConfirmDialog(null,
 					"You have won! " + "Play again?", "Winner!",
 					JOptionPane.YES_NO_OPTION) != JOptionPane.YES_OPTION) {

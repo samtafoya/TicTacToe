@@ -8,7 +8,6 @@ public class ComputerPlayer implements Observer {
 	@Override
 	public void update(Observable o, Object data) {
 		if ((String) data == "1") {
-			System.out.println("they won!");
 			if (JOptionPane.showConfirmDialog(null,
 					"You have lost! " + "Play again?", "Loser!",
 					JOptionPane.YES_NO_OPTION) != JOptionPane.YES_OPTION) {
